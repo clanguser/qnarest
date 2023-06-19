@@ -41,7 +41,7 @@ Content-Type: application/json
 Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NDkwMzJjN2Y0Y2U3OGNiZDIyMGU5NjUiLCJpYXQiOjE2ODcxNzE3ODksImV4cCI6MTY4NzE3NTM4OX0.vs6EvtzVI4FC3EDOUCa0NqRK1AIaOk6aNQFiZD2xvgk
 
 {
-  "question": "What is your favorite food?"
+  "question": "What is your favorite javascript framework?"
 }
 
 ### Delete a question

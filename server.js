@@ -1,15 +1,16 @@
+require("dotenv").config();
 const express = require("express");
 const mongoose = require("mongoose");
 const bcrypt = require("bcrypt");
 const jwt = require("jsonwebtoken");
 
 const app = express();
-const port = 3000;
+const port = process.env.PORT || 3000;
 
 app.use(express.json());
 
 // Connect to MongoDB using Mongoose
-mongoose.connect("mongodb://localhost/qna_db", {
+mongoose.connect(process.env.MONGODB_URI, {
   useNewUrlParser: true,
   useUnifiedTopology: true,
 });
@@ -27,7 +28,7 @@ const userSchema = new mongoose.Schema({
 
 const User = mongoose.model("User", userSchema);
 
-const secretKey = "your-secret-key";
+const secretKey = process.env.JWT_SECRET;
 
 app.post("/signup", async (req, res) => {
   const { username, password } = req.body;
