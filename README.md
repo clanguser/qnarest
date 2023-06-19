@@ -1,18 +1,19 @@
 Steps:
 1. Clone the repo
 2. Install the packages
-'''
+```shell
   npm init -y
   npm install express mongoose nodemon jsonwebtoken bcrypt
-'''
+```
 
 3. Run the server
-'''
+```shell
   npx nodemon server.js
-'''
+```
 4. Use route.rest to test the API endpoints
 
 Screenshots:
+
 Signup:
 ![image](https://github.com/clanguser/qnarest/assets/91418836/804900f8-76c8-4702-9638-d60820a04a07)
 
