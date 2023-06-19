@@ -1,0 +1,50 @@
+### Signup
+POST http://localhost:3000/signup
+Content-Type: application/json
+
+{
+  "username": "testuser",
+  "password": "testpassword"
+}
+
+### Login
+POST http://localhost:3000/login
+Content-Type: application/json
+
+{
+  "username": "testuser",
+  "password": "testpassword"
+}
+
+### Create a question
+POST http://localhost:3000/questions
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NDkwMzJjN2Y0Y2U3OGNiZDIyMGU5NjUiLCJpYXQiOjE2ODcxNzE3ODksImV4cCI6MTY4NzE3NTM4OX0.vs6EvtzVI4FC3EDOUCa0NqRK1AIaOk6aNQFiZD2xvgk
+
+{
+  "question": "What is your favorite color?"
+}
+
+### Get all questions
+GET http://localhost:3000/questions
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NDkwMzJjN2Y0Y2U3OGNiZDIyMGU5NjUiLCJpYXQiOjE2ODcxNzE3ODksImV4cCI6MTY4NzE3NTM4OX0.vs6EvtzVI4FC3EDOUCa0NqRK1AIaOk6aNQFiZD2xvgk
+
+### Get a specific question
+GET http://localhost:3000/questions/649032f0f4ce78cbd220e968
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NDkwMzJjN2Y0Y2U3OGNiZDIyMGU5NjUiLCJpYXQiOjE2ODcxNzE3ODksImV4cCI6MTY4NzE3NTM4OX0.vs6EvtzVI4FC3EDOUCa0NqRK1AIaOk6aNQFiZD2xvgk
+
+### Update a question
+PUT http://localhost:3000/questions/649032f0f4ce78cbd220e968
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NDkwMzJjN2Y0Y2U3OGNiZDIyMGU5NjUiLCJpYXQiOjE2ODcxNzE3ODksImV4cCI6MTY4NzE3NTM4OX0.vs6EvtzVI4FC3EDOUCa0NqRK1AIaOk6aNQFiZD2xvgk
+
+{
+  "question": "What is your favorite food?"
+}
+
+### Delete a question
+DELETE http://localhost:3000/questions/649032f0f4ce78cbd220e968
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NDkwMzJjN2Y0Y2U3OGNiZDIyMGU5NjUiLCJpYXQiOjE2ODcxNzE3ODksImV4cCI6MTY4NzE3NTM4OX0.vs6EvtzVI4FC3EDOUCa0NqRK1AIaOk6aNQFiZD2xvgk
